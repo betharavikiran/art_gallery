@@ -1,0 +1,39 @@
+version: '3.3'
+
+services:
+
+  meteorapp:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: chaitanya/meteorsandbox:8.9.4
+    container_name: meteorSandBox
+    environment:
+      ROOT_URL: http://localhost:3000
+      MONGO_URL: mongodb://mongoMeteor:27017/meteor
+      PORT: 3000
+    depends_on:
+      - mongo
+    expose:
+      - 3000
+    links:
+      - mongo:mongoMeteor
+    ports:
+      - "3000:3000"
+    volumes:
+      - $PWD:/home/node/app
+    networks:
+      - ethereum
+
+  mongo:
+    image: mongo:3.4-jessie
+    container_name: "mongoMeteor"
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /home/chaitanya/dockerDir/db:/data/db
+    networks:
+      - ethereum
+networks:
+  ethereum:
+    external:
+      name: ethereum

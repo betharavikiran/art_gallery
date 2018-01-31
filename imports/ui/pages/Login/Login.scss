@@ -1,0 +1,51 @@
+#login{
+  background:url('img/login_bg.jpg');
+  background-size:cover;
+  background-position:center center;
+  background-attachment:fixed;
+}
+
+.login, .content{
+  text-align:center;
+  position:relative;
+  width: 100%;
+}
+
+.inner{
+  min-height:400px;
+  position: relative;
+}
+
+.login .inner{
+  background: rgba(0,0,0,0.2) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAD0lEQVQIW2NkQABjRmQOAAM+AGkQsDBSAAAAAElFTkSuQmCC) repeat;}
+
+
+.copy{
+  position:absolute;
+  top:50%;
+  height:10em;
+  margin-top:-5em;
+  width:100%;
+}
+
+.login h1, .hero p{
+  color:#fff;
+}
+
+.content h1, .content p{
+  color:#333;
+}
+
+h1{
+  margin:0px;
+  font-family: 'Roboto Slab', serif;
+  font-weight:400;
+  font-size:32px;
+  padding:0px 20px;
+}
+
+p{
+  font-family: 'Noto Sans', sans-serif;
+  font-size:14px;
+  padding:0px 20px;
+}

@@ -1,0 +1,11 @@
+buildDir
+docker-compose.yml
+Dockerfile
+LICENSE.txt
+README.md
+.meteor/local
+packages/*/.build*
+packages/*/.npm*
+node_modules
+.eslintignore
+

@@ -1,0 +1,100 @@
+@import '../../stylesheets/mixins';
+@import '../../stylesheets/colors';
+
+.main-home-page {
+  margin-top: 100px;
+  opacity: 0.6;
+}
+
+@include breakpoint(tablet) {
+  .Index {
+    padding: 30px;
+
+    footer {
+      margin: 30px -30px -30px;
+    }
+  }
+}
+
+@include breakpoint(desktop) {
+  .Index {
+    padding: 40px;
+
+    footer {
+      margin: 40px -40px -40px;
+    }
+  }
+}
+
+.home-page-header:before {
+  background: #373736;
+}
+
+.home-title {
+  position: relative;
+  letter-spacing: 4px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 15px;
+  color: white;
+  max-width: 600px;
+  background: #313638;
+}
+
+.home-title-box {
+  background: #313638;
+  margin-top: 50px;
+  margin-left: 200px;
+  padding: 20px 10px;
+  border: #FFAD3C double 10px;
+  max-width: 700px;
+  max-height: 150px;
+}
+
+.home-box-text {
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  text-transform: none;
+}
+
+.home-features-title {
+  text-transform: none;
+  letter-spacing: 2px;
+  font-family: Futura;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  margin: 16px 0 15px;
+}
+
+
+.home-features {
+  padding: 15px;
+  opacity: 0.8;
+  min-height: 400px;
+}
+
+
+.btn.btn-round-30 {
+  border-radius: 30px;
+  background-color: #313638;
+  border: 3px solid #FFAD3C;
+}
+
+
+.para {
+  font-size: 18px;
+  color: white;
+}
+
+.logo--para {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 18px;
+}
+
+.NoTransform {
+  margin: 0px;
+  text-transform: none;
+}
