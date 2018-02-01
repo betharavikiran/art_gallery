@@ -41,7 +41,7 @@ const App = props => (
   <Router>
     {!props.loading ? (
 
-      <div className="App" id="home">
+      <div className="App">
         {props.authenticated ?
           <VerifyEmailAlert
             userId={props.userId}

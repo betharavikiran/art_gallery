@@ -9,7 +9,7 @@ class Home extends React.Component {
   render() {
     return (
       <div className="main main-home-page">
-        <section className="module home-page-header" id="home">
+        <section className="module home-page-header">
           <div className="container">
             <Grid>
               <Row>
