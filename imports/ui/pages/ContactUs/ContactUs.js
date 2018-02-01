@@ -8,7 +8,7 @@ const ContactUs = () => (
         <Grid>
           <Row>
             <Col sm={6} smOffset={3} >
-              <h2 className="module-title font-alt">Contact Us</h2>
+              <h2 className="artistic-title">Contact Us</h2>
               <div className="module-subtitle font-serif">There is a possibility for every one to participate. Reach out to us to discuss.</div>
             </Col>
           </Row>

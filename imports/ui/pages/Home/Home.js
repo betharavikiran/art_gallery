@@ -1,6 +1,8 @@
 import React from 'react';
 import { Col, Row, Grid, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import moment from 'moment';
+import CountdownTimer from 'react-awesome-countdowntimer';
 import './Home.scss';
 
 class Home extends React.Component {
@@ -10,136 +12,115 @@ class Home extends React.Component {
         <section className="module home-page-header" id="home">
           <div className="container">
             <Grid>
+              <Row>
+                <Col md={6} mdOffset={3} sm={6} smOffset={3}>
+                  <div className="artistic-title">ART GALLERY</div>
+                  <h2 className="module-subtitle font-alt">ICO round finishes in</h2>
+                  <CountdownTimer endDate={moment('06/12/2018')} />
+                </Col>
+              </Row>
               <Row className="home-title-box">
-                <Col md={2} mdOffset={1} sm={6}>
-                  <Image src="img/home/network.png" responsive className="img-center" />
+                <Col md={6} sm={6}>
+                  <div className="home-title font-alt">THE DECENTRALIZED BLOCKCHAIN PLATFORM DISRUPTING ART WORK MARKETPLACE</div>
                 </Col>
-                <Col md={8} sm={6}>
-                  <div className="home-title font-alt">A PEER-TO-PEER LENDING COMMUNITY,<br />EMPOWERING BORROWERS AND<br />REWARDING LENDERS</div>
-                </Col>
-              </Row>
-              <Row>
-                <div className="layout">
-                  <div className="centre">
-                    <Image src="img/logo.png" className="img-center" responsive />
-                  </div>
-                </div>
-              </Row>
-              <Row>
-                <Col sm={2} smOffset={2}>
+                <Col md={6} sm={6}>
                   <div className="callout-btn-box">
-                    <li>
-                      <Link className="btn btn-round-30 btn-warning" to="/karma">
-                        <h4>Karma</h4>
-                        <p className="NoTransform">for Borrowers</p>
-                      </Link>
-                    </li>
-                  </div>
-                </Col>
-                <Col sm={2} smOffset={4}>
-                  <div className="callout-btn-box">
-                    <li>
-                      <Link className="btn btn-round-30 btn-warning" to="/dharma">
-                        <h4>Dharma</h4>
-                        <p className="NoTransform">for Lenders</p>
-                      </Link>
-                    </li>
+                    <a className="btn btn-warning btn-round black--text" href="https://ico.nexus.social/pdfs/legals/Nexus-White-Paper.pdf" >White Paper</a>
                   </div>
                 </Col>
               </Row>
             </Grid>
           </div>
         </section>
-        <hr />
-        <section>
+        <section className="module">
           <div className="container">
-            <Grid>
-              <Row>
-                <h2 className="home-box-text">Why become part of the KARMA community ?</h2>
-              </Row>
-              <Row className="multi-columns-row">
-                <Col md={4} sm={6} xs={12}>
-                  <div className="home-features">
-                    <div className="features-icon"><span className="icon-lightbulb" /></div>
-                    <h3 className="home-features-title font-alt">No Hidden Fees</h3>
-                    <hr />
-                    <p className="para">Transperency is our policy. What you see is what you get.</p>
-                    <br />
-                    <br />
-                    <Image src="img/home/search.png" className="img-center icon-big" responsive />
+            <h2 className="module-title font-alt">Decentralized Platform</h2>
+            <Row>
+              <Col sm={8} smOffset={2}>
+                <hr className="divider-w mt-10 mb-20" />
+                <Row className="multi-columns-row">
+                  <Col sm={4} md={4} lg={4}>
+                    <div className="features-item">
+                      <i className="fa fa-paint-brush fa-5x" aria-hidden="true" />
+                      <h3 className="features-title font-alt">Artist</h3>
+                      <p>Creators of art are looking to showcase and sell their work. Thanks to the ART Gallery platform factors like size of artworks, space, location and time will no longer be an obstacle.</p>
+                    </div>
+                  </Col>
+                  <Col sm={4} md={4} lg={4}>
+                    <div className="features-item">
+                      <i className="fa fa-building fa-5x" aria-hidden="true" />
+                      <h3 className="features-title font-alt">Gallery</h3>
+                      <p>The digital world opens new possibilities where space and time are no longer an issue.</p>
+                    </div>
+                  </Col>
+                  <Col sm={4} md={4} lg={4}>
+                    <div className="features-item">
+                      <i className="fa fa-book fa-5x" aria-hidden="true" />
+                      <h3 className="features-title font-alt">Curator</h3>
+                      <p>Organizing and profiling of art is now accessible, creates value and brings profits with special curation-on-demand program.</p>
+                    </div>
+                  </Col>
+                </Row>
+                <Row className="multi-columns-row" />
+                <Col sm={4} md={4} lg={4}>
+                  <div className="features-item">
+                    <i className="fa fa-list-alt fa-5x" aria-hidden="true" />
+                    <h3 className="features-title font-alt">Collector</h3>
+                    <p>Cross-border access to quality art is no longer a problem. Trading becomes a global investment opportunity.</p>
                   </div>
                 </Col>
-                <Col md={4} sm={6} xs={12}>
-                  <div className="home-features">
-                    <div className="features-icon"><span className="icon-bike" /></div>
-                    <h3 className="home-features-title font-alt">Simple and Safe</h3>
-                    <hr />
-                    <p className="para">Life is complicated enough,<br />Paying bills shouldn't be.<br />Our system is simple to use and host military grade encryption is as safe as it can get.</p>
-                    <Image src="img/home/safe.png" className="img-center icon-big" responsive />
+                <Col sm={4} md={4} lg={4}>
+                  <div className="features-item">
+                    <i className="fa fa-heart fa-5x" aria-hidden="true" />
+                    <h3 className="features-title font-alt">Art Lover</h3>
+                    <p>A visit to any exhibition is no longer bound to geographical or time limits.</p>
                   </div>
                 </Col>
-                <Col md={4} sm={6} xs={12}>
-                  <div className="home-features">
-                    <div className="features-icon"><span className="icon-tools" /></div>
-                    <h3 className="home-features-title font-alt">Be part of something Big</h3>
-                    <hr />
-                    <p className="para">The KARMA Community is revolutionizing the way we see and use finance, you can be a member and help others while getting rewarded for it.</p>
-                    <Image src="img/home/group.png" className="img-center icon-big" responsive />
+                <Col sm={4} md={4} lg={4}>
+                  <div className="features-item">
+                    <i className="fa fa-bank fa-5x" aria-hidden="true" />
+                    <h3 className="features-title font-alt">Museum</h3>
+                    <p>Creating virtual exhibitions opens new audiences and changes museums into global institutions.</p>
                   </div>
                 </Col>
-              </Row>
-            </Grid>
+              </Col>
+            </Row>
           </div>
         </section>
         <hr />
-        <section className="module" id="team">
+        <section className="module" id="alt-features">
           <div className="container">
-            <Grid>
-              <Row>
-                <Col sm={12}>
-                  <h3 className="home-box-text">The KARMA community, connecting borrowers & lenders</h3>
-                </Col>
-              </Row>
-              <Row>
-                <div className="layout">
-                  <div className="centre">
-                    <Image src="img/logo.png" className="img-center" responsive />
-                  </div>
-                  <p className="logo--para">K A R M A</p>
-                  <br />
-                  <br />
+            <h2 className="module-title font-alt">Block Chain Technology</h2>
+            <Row>
+              <Col sm={6} smOffset={1} md={3} mdOffset={1} lg={3} lgOffset={1} >
+                <div className="features-item">
+                  <i className="fa fa-certificate fa-5x" aria-hidden="true" />
+                  <h3 className="features-title font-alt">Certification</h3>Preserving value of art needs traceability. Blockchain as a decentralised ledger enables certification, trust and security like never before..
                 </div>
-              </Row>
-              <Row>
-                <div className="layout">
-                  <Image src="img/home/visual-network.png" className="img-center" responsive />
+                <div className="features-item">
+                  <i className="fa fa-exchange fa-5x" aria-hidden="true" />
+                  <h3 className="features-title font-alt">Trading</h3>ArtCoins are used as a basic crypto currency in the trade of artworks in virtual galleries, on web sites as well as in brick and mortar galleries.
                 </div>
-              </Row>
-              <Row>
-                <Col sm={12}>
-                  <br />
-                  <h5 className="home-box-text">KARMA empowers borrowers to take control of their future, <br />based on their actions in the KARMA community.</h5>
-                </Col>
-              </Row>
-            </Grid>
+              </Col>
+              <Col smHidden md={2} lg={4}>
+                <div className="services-image align-center"><Image src="img/home/crypto.jpg" responsive /></div>
+              </Col>
+              <Col sm={6} md={3} lg={3}>
+                <div className="features-item">
+                  <i className="fa fa-connectdevelop fa-5x" aria-hidden="true" />
+                  <h3 className="features-title font-alt">Integration</h3>Any website or platform that trades art as well as every artist or gallery will all be able to apply ArtCoins to handle transactions - even on smartphones.
+                </div>
+                <div className="features-item">
+                  <i className="fa fa-dollar fa-5x" aria-hidden="true" />
+                  <h3 className="features-title font-alt">Valuation</h3>With the ArtCoins ecosystem we also introduce “ArtValue”, a unique valuation system that allows to asses the value of artworks independently of any currencies, tokens, market fluctuations and exchanges.
+                </div>
+              </Col>
+            </Row>
           </div>
         </section>
-        <hr />
       </div>
     );
   }
 }
 
 export default Home;
-
-
-/*
-<Row className="home-title-box">
-                <Col md={2} mdOffset={1} sm={6}>
-                  <Image src="img/home/network.png" responsive />
-                </Col>
-                <Col md={8} sm={6}>
-                  <div className="home-title font-alt">A PEER-TO-PEER LENDING COMMUNITY,<br />EMPOWERING BORROWERS AND<br />REWARDING LENDERS</div>
-                </Col>
-              </Row>
- */

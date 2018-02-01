@@ -47,7 +47,7 @@ class About extends React.Component {
       { id: 31, name: 'High Five', img: 'img/about/30.jpg' },
     ];
 
-    const myItems = items.map(item => <div key={item.id}><Image src={item.img} /></div>);
+    const myItems = items.map(item => <div className="Frame" key={item.id}><Image src={item.img} /></div>);
 
 
     return (
@@ -58,19 +58,21 @@ class About extends React.Component {
               <Grid>
                 <Row>
                   <Col sm={6} smOffset={3} >
-                    <h2 className="module-title font-alt">Our creative work</h2>
+                    <h2 className="artistic-title">Our creative work</h2>
                     <div className="module-subtitle font-serif">Imaginative contributions from creative minds.</div>
                   </Col>
                 </Row>
                 <Row>
                   <Col sm={10} smOffset={1} >
-                    <Masonry
-                      breakpointCols={breakpointColumnsObj}
-                      className="my-masonry-grid"
-                      columnClassName="my-masonry-grid_column"
-                    >
-                      {myItems}
-                    </Masonry>
+                    <div className="masonary-container" id="Frames">
+                      <Masonry
+                        breakpointCols={breakpointColumnsObj}
+                        className="my-masonry-grid"
+                        columnClassName="my-masonry-grid_column"
+                      >
+                        {myItems}
+                      </Masonry>
+                    </div>
                   </Col>
                 </Row>
               </Grid>

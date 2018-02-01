@@ -13,8 +13,6 @@ const copyrightYear = () => {
 const Footer = () => (
   <div className="Footer">
     <Grid>
-      <Row>This is a row
-      </Row>
       <hr />
       <p className="pull-left">&copy; {copyrightYear()} ART GALLERY</p>
     </Grid>

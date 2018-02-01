@@ -53,56 +53,54 @@ class Login extends React.Component {
 
   render() {
     return (
-      <div className="main">
-        <section id="login" className="login">
+      <div className="main login blur" id="login">
+        <section>
           <div className="inner">
             <div className="copy">
-              <h1>Login</h1>
+              <h1 className="artistic-title">Login</h1>
             </div>
           </div>
         </section>
         <section className="module">
-          <div className="container">
-            <hr className="divider-w mb-5" />
-            <Grid>
-              <Row>
-                <Col sm={5} className="mb-sm-40">
-                  <OAuthLoginButtons
-                    services={['facebook', 'github', 'google']}
-                  />
-                </Col>
-                <Col sm={5}>
-                  <form ref={form => (this.form = form)} onSubmit={event => event.preventDefault()}>
-                    <FormGroup>
-                      <ControlLabel>Email Address</ControlLabel>
-                      <input
-                        type="email"
-                        name="emailAddress"
-                        ref={emailAddress => (this.emailAddress = emailAddress)}
-                        className="form-control"
-                      />
-                    </FormGroup>
-                    <FormGroup>
-                      <ControlLabel className="clearfix">
-                        <span className="pull-left">Password</span>
-                        <Link className="pull-right" to="/recover-password">Forgot password?</Link>
-                      </ControlLabel>
-                      <input
-                        type="password"
-                        name="password"
-                        ref={password => (this.password = password)}
-                        className="form-control"
-                      />
-                    </FormGroup>
-                    <Button type="submit" className="btn btn-round btn-b">Log In</Button>
-                    <AccountPageFooter>
-                      <p>{'Don\'t have an account?'} <Link to="/signup">Sign Up</Link>.</p>
-                    </AccountPageFooter>
-                  </form>
-                </Col>
-              </Row>
-            </Grid>
-          </div>
+          <hr className="divider-w mb-5" />
+          <Grid>
+            <Row>
+              <Col sm={5} className="mb-sm-40">
+                <OAuthLoginButtons
+                  services={['facebook', 'github', 'google']}
+                />
+              </Col>
+              <Col sm={5}>
+                <form ref={form => (this.form = form)} onSubmit={event => event.preventDefault()}>
+                  <FormGroup>
+                    <ControlLabel>Email Address</ControlLabel>
+                    <input
+                      type="email"
+                      name="emailAddress"
+                      ref={emailAddress => (this.emailAddress = emailAddress)}
+                      className="form-control"
+                    />
+                  </FormGroup>
+                  <FormGroup>
+                    <ControlLabel className="clearfix">
+                      <span className="pull-left">Password</span>
+                      <Link className="pull-right" to="/recover-password">Forgot password?</Link>
+                    </ControlLabel>
+                    <input
+                      type="password"
+                      name="password"
+                      ref={password => (this.password = password)}
+                      className="form-control"
+                    />
+                  </FormGroup>
+                  <Button type="submit" className="btn btn-round btn-b">Log In</Button>
+                  <AccountPageFooter>
+                    <p>{'Don\'t have an account?'} <Link to="/signup">Sign Up</Link>.</p>
+                  </AccountPageFooter>
+                </form>
+              </Col>
+            </Row>
+          </Grid>
         </section>
       </div>
     );

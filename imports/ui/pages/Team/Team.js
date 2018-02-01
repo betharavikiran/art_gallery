@@ -1,5 +1,6 @@
 import React from 'react';
 import { Grid, Row, Col, Image } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import data from './data';
 
 import './Team.scss';
@@ -14,7 +15,7 @@ const Team = () => (
           <Grid>
             <Row>
               <Col sm={6} smOffset={3} >
-                <h2 className="module-title font-alt">Meet Our Team</h2>
+                <h2 className="artistic-title">Meet Our Team</h2>
                 <div className="module-subtitle font-serif">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</div>
               </Col>
             </Row>
@@ -45,6 +46,10 @@ const Team = () => (
   </section>
 );
 
+function getUrlForSlug(profileSlug) {
+  return `/member-detail/${profileSlug}`;
+}
+
 const TeamMemberEntry = ({
   profileSlug, displayName, jobDescription, pictureUrl, salutation, message, facebookUsername, twitterUserName, linkedinUserName,
 }) => (
@@ -56,11 +61,10 @@ const TeamMemberEntry = ({
         <div className="team-name">{displayName}</div>
         <div className="team-role">{jobDescription}</div>
       </div>
-      <button className="btn btn-round-30 btn-warning" onClick={() => history.push(`/member-detail/${profileSlug}`)} >Profile</button>
+      <Link className="btn btn-round-30 btn-warning" to={getUrlForSlug(profileSlug)}>Profile</Link>
     </div>
   </div>
 );
-
 
 
 TeamMemberEntry.propTypes = {

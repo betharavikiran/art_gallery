@@ -1,3 +1,11 @@
+.about-page {
+  opacity: 0.95;
+}
+
+.masonary-container {
+  opacity: 1;
+}
+
 .my-masonry-grid {
   display: -webkit-box; // Not needed if autoprefixing
   display: -ms-flexbox; // Not needed if autoprefixing
@@ -5,7 +13,7 @@
   margin-left: -2px; // gutter size offset
 }
 .my-masonry-grid_column {
-  border-left: 2px solid transparent; // gutter size
+  border-left: 3px solid transparent; // gutter size
   background-clip: padding-box;
 }
 

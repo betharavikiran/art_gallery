@@ -82,11 +82,11 @@ class Signup extends React.Component {
 
   render() {
     return (
-      <div className="main">
-        <section id="signup" className="signup">
+      <div className="main signup" id="signup">
+        <section>
           <div className="inner">
             <div className="copy">
-              <h1>Sign up</h1>
+              <h1 className="artistic-title">Sign up</h1>
             </div>
           </div>
         </section>

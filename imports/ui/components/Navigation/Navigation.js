@@ -13,8 +13,7 @@ const Navigation = props => (
       <Navbar.Header>
         <Navbar.Brand>
           <div>
-            <Image src="img/logo.png" className="logo" responsive />
-            <Link to="/">Art Gallery</Link>
+            <Link to="/"><Image src="img/logo.png" className="logo" responsive /></Link>
           </div>
         </Navbar.Brand>
         <Navbar.Toggle />
