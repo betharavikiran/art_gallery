@@ -70,7 +70,7 @@ const TeamMemberEntry = ({
 TeamMemberEntry.propTypes = {
   displayName: PropTypes.string.isRequired,
   jobDescription: PropTypes.string,
-  pictureUrl: PropTypes.string.isRequired,
+  publicID: PropTypes.string.isRequired,
   salutation: PropTypes.string,
   message: PropTypes.string,
   profileSlug: PropTypes.string.isRequired,
