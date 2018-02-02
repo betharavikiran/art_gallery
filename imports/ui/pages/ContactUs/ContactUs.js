@@ -1,9 +1,11 @@
 import React from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
 
+import './ContactUs.scss';
+
 const ContactUs = () => (
-  <div className="main">
-    <section className="module bg-dark-30 contact-page-header" data-background="assets/images/contact_bg.jpg">
+  <section className="contactus-page">
+    <section className="module bg-dark-30 contact-page-header">
       <div className="container">
         <Grid>
           <Row>
@@ -15,7 +17,7 @@ const ContactUs = () => (
         </Grid>
       </div>
     </section>
-    <section className="module">
+    <section className="module bg-dark-30 contact-page-header">
       <div className="container">
         <Grid>
           <Row>
@@ -56,7 +58,7 @@ const ContactUs = () => (
         </Grid>
       </div>
     </section>
-  </div>
+  </section>
 );
 
 export default ContactUs;

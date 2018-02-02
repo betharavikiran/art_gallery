@@ -1,22 +1,24 @@
 import React from 'react';
 import { Col, Row, Grid, Image } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import moment from 'moment';
 import CountdownTimer from 'react-awesome-countdowntimer';
+
+import CloudinaryImage from '../../components/CloudinaryImage/CloudinaryImage';
+
 import './Home.scss';
 
 class Home extends React.Component {
   render() {
     return (
-      <div className="main main-home-page">
-        <section className="module home-page-header">
+      <div className="main-home-page">
+        <section className="module bg-dark-30">
           <div className="container">
             <Grid>
               <Row>
                 <Col md={6} mdOffset={3} sm={6} smOffset={3}>
                   <div className="artistic-title">ART GALLERY</div>
                   <h2 className="module-subtitle font-alt">ICO round finishes in</h2>
-                  <CountdownTimer endDate={moment('06/12/2018')} />
+                  <CountdownTimer className="my-countdown" endDate={moment('06/12/2018')} />
                 </Col>
               </Row>
               <Row className="home-title-box">
@@ -32,7 +34,7 @@ class Home extends React.Component {
             </Grid>
           </div>
         </section>
-        <section className="module">
+        <section className="module bg-dark-30">
           <div className="container">
             <h2 className="module-title font-alt">Decentralized Platform</h2>
             <Row>
@@ -87,8 +89,8 @@ class Home extends React.Component {
             </Row>
           </div>
         </section>
-        <hr />
-        <section className="module" id="alt-features">
+        <hr/>
+        <section className="module bg-dark-30">
           <div className="container">
             <h2 className="module-title font-alt">Block Chain Technology</h2>
             <Row>
@@ -103,7 +105,7 @@ class Home extends React.Component {
                 </div>
               </Col>
               <Col smHidden md={2} lg={4}>
-                <div className="services-image align-center"><Image src="img/home/crypto.jpg" responsive /></div>
+                <div className="services-image align-center"><CloudinaryImage publicId="crypto_zqirdm" responsive /></div>
               </Col>
               <Col sm={6} md={3} lg={3}>
                 <div className="features-item">

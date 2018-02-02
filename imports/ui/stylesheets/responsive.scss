@@ -250,10 +250,6 @@
     width: 50%;
   }
 
-  .team-page {
-    margin-top: 200px;
-  }
-
   .home-title-box {
     margin-top: 0px;
     margin-left: 0px;
@@ -276,6 +272,18 @@
   .nav--para {
     padding: 1px;
     margin-bottom: 1px;
+  }
+
+  .module, .module-small {
+    padding: 50px 0;
+  }
+
+  .inner {
+    min-height: 200px;
+  }
+
+  .time {
+    font-size: 24px;
   }
 }
 

@@ -1,23 +1,31 @@
 {
-  "public": {},
+  "public": {
+    "cloudinary": {
+      "cloudName": "art-gallery"
+    }
+  },
   "private": {
     "MAIL_URL": "",
     "OAuth": {
       "facebook": {
-        "appId": "",
-        "secret": "",
+        "appId": "368549273617103",
+        "secret": "1ed82fbdf3928abb9c5835f4db307c4b",
         "loginStyle": "popup"
       },
       "google": {
-        "clientId": "",
-        "secret": "",
+        "clientId": "442053830517-uthph0sajvsqvvcqrq6i9fm1osqbr25d.apps.googleusercontent.com",
+        "secret": "KZq8euGchWdZbDJAh_HaFKtg",
         "loginStyle": "popup"
       },
       "github": {
-        "clientId": "",
-        "secret": "",
+        "clientId": "0e51bd9197be3980e167",
+        "secret": "7fa3288acb2ba1b15e1888bcecb4de185dbb4dd6",
         "loginStyle": "popup"
       }
+    },
+    "cloudinary": {
+      "apiKey": "768152864969836",
+      "apiSecret": "lSelPkqcLK6PHONg5kiJXKDv8iY"
     }
   }
 }

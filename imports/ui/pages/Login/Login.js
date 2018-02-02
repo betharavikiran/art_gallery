@@ -53,7 +53,7 @@ class Login extends React.Component {
 
   render() {
     return (
-      <div className="main login blur" id="login">
+      <div className="login" id="login">
         <section>
           <div className="inner">
             <div className="copy">
@@ -61,7 +61,7 @@ class Login extends React.Component {
             </div>
           </div>
         </section>
-        <section className="module">
+        <section className="module bg-dark-30">
           <hr className="divider-w mb-5" />
           <Grid>
             <Row>

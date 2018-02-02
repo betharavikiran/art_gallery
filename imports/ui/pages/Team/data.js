@@ -1,7 +1,7 @@
 const advisors = [
   {
     profileSlug: 'jim_stone',
-    pictureUrl: 'img/team/1.jpg',
+    publicID: '1_ipqbnk',
     salutation: 'Hi all',
     message: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a&amp;nbsp;iaculis diam',
     facebookUsername: '',
@@ -12,7 +12,7 @@ const advisors = [
   },
   {
     profileSlug: 'andy_river',
-    pictureUrl: 'img/team/2.jpg',
+    publicID: '2_vjokmx',
     salutation: 'Good Day',
     message: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a&amp;nbsp;iaculis diam',
     facebookUsername: '',
@@ -23,7 +23,7 @@ const advisors = [
   },
   {
     profileSlug: 'adele_snow',
-    pictureUrl: 'img/team/3.jpg',
+    publicID: '3_da6nnn',
     salutation: 'Good Day',
     message: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a&amp;nbsp;iaculis diam',
     facebookUsername: '',
@@ -34,7 +34,7 @@ const advisors = [
   },
   {
     profileSlug: 'dylan_woods',
-    pictureUrl: 'img/team/4.jpg',
+    publicID: '4_zhebuv',
     salutation: 'Good Day',
     message: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a&amp;nbsp;iaculis diam',
     facebookUsername: '',
@@ -49,7 +49,7 @@ const advisors = [
 const artists = [
   {
     profileSlug: 'jim_stone2',
-    pictureUrl: 'img/team/6.jpg',
+    publicID: '6_rjzion',
     salutation: 'Hi all',
     message: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a&amp;nbsp;iaculis diam',
     facebookUsername: '',
@@ -60,7 +60,7 @@ const artists = [
   },
   {
     profileSlug: 'andy_river1',
-    pictureUrl: 'img/team/7.jpg',
+    publicID: '7_r8ww3n',
     salutation: 'Good Day',
     message: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a&amp;nbsp;iaculis diam',
     facebookUsername: '',
@@ -71,7 +71,7 @@ const artists = [
   },
   {
     profileSlug: 'adele_snow1',
-    pictureUrl: 'img/team/8.jpg',
+    publicID: '8_b0ycmt',
     salutation: 'Good Day',
     message: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a&amp;nbsp;iaculis diam',
     facebookUsername: '',
@@ -82,7 +82,7 @@ const artists = [
   },
   {
     profileSlug: 'dylan_woods1',
-    pictureUrl: 'img/team/9.jpg',
+    publicID: '9_kdmblm',
     salutation: 'Good Day',
     message: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a&amp;nbsp;iaculis diam',
     facebookUsername: '',
@@ -96,7 +96,7 @@ const artists = [
 const technologists = [
   {
     profileSlug: 'jim_stone3',
-    pictureUrl: 'img/team/11.jpg',
+    publicID: '11_zikya4',
     salutation: 'Hi all',
     message: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a&amp;nbsp;iaculis diam',
     facebookUsername: '',
@@ -107,7 +107,7 @@ const technologists = [
   },
   {
     profileSlug: 'andy_river3',
-    pictureUrl: 'img/team/12.jpg',
+    publicID: '12_gaaqnv',
     salutation: 'Good Day',
     message: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a&amp;nbsp;iaculis diam',
     facebookUsername: '',
@@ -118,7 +118,7 @@ const technologists = [
   },
   {
     profileSlug: 'adele_snow3',
-    pictureUrl: 'img/team/13.jpg',
+    publicID: '13_jkbktm',
     salutation: 'Good Day',
     message: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a&amp;nbsp;iaculis diam',
     facebookUsername: '',
@@ -129,7 +129,7 @@ const technologists = [
   },
   {
     profileSlug: 'dylan_woods3',
-    pictureUrl: 'img/team/14.jpg',
+    publicID: '14_clgbev',
     salutation: 'Good Day',
     message: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a&amp;nbsp;iaculis diam',
     facebookUsername: '',

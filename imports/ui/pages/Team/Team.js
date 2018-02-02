@@ -5,7 +5,7 @@ import data from './data';
 
 import './Team.scss';
 import PropTypes from 'prop-types';
-
+import CloudinaryImage from '../../components/CloudinaryImage/CloudinaryImage';
 
 const Team = () => (
   <section className="team-page">
@@ -51,11 +51,11 @@ function getUrlForSlug(profileSlug) {
 }
 
 const TeamMemberEntry = ({
-  profileSlug, displayName, jobDescription, pictureUrl, salutation, message, facebookUsername, twitterUserName, linkedinUserName,
+  profileSlug, displayName, jobDescription, publicID, salutation, message, facebookUsername, twitterUserName, linkedinUserName,
 }) => (
   <div className="mb-sm-20 col-sm-6 col-md-3">
     <div className="team-item1">
-      <div className="team-image"><Image src={pictureUrl} circle responsive className="img-center" />
+      <div className="team-image"><CloudinaryImage publicId={publicID} isCircle classNames="img-center" />
       </div>
       <div className="team-descr font-alt">
         <div className="team-name">{displayName}</div>

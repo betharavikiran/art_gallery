@@ -1,9 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Navbar, Image } from 'react-bootstrap';
+import { Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import PublicNavigation from '../PublicNavigation/PublicNavigation';
 import AuthenticatedNavigation from '../AuthenticatedNavigation/AuthenticatedNavigation';
+
+import CloudinaryImage from '../CloudinaryImage/CloudinaryImage';
 
 import './Navigation.scss';
 
@@ -13,7 +15,7 @@ const Navigation = props => (
       <Navbar.Header>
         <Navbar.Brand>
           <div>
-            <Link to="/"><Image src="img/logo.png" className="logo" responsive /></Link>
+            <Link to="/"><CloudinaryImage publicId="logo_avuglm" classNames="logo" /></Link>
           </div>
         </Navbar.Brand>
         <Navbar.Toggle />

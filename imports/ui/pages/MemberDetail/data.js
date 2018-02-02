@@ -2,7 +2,7 @@ const profiles = [
   {
     displayName: 'Jatinder Bhogal',
     profileSlug: 'jim_stone',
-    pictureUrl: 'http://localhost:3000/img/team/1.jpg',
+    publicID: '1_ipqbnk',
     role: 'Advisor',
     introduction: 'Entrepreneur, Inventor, Author, Advisor, Consultant for all things multiuser, realtime, and social.',
     expertise: 'Reputation Systems, Social Software, Virtual Communities. Virtual Economies, Virtual Worlds, Online Identity, Distributed Objects, Capability Systems, Open Social',
@@ -24,7 +24,7 @@ const profiles = [
   {
     displayName: 'Jay Hayden',
     profileSlug: 'andy_river',
-    pictureUrl: 'http://localhost:3000/img/team/2.jpg',
+    publicID: '2_vjokmx',
     role: 'Advisor',
     introduction: 'Entrepreneur, Inventor, Author, Advisor, Consultant for all things multiuser, realtime, and social.',
     expertise: 'Reputation Systems, Social Software, Virtual Communities. Virtual Economies, Virtual Worlds, Online Identity, Distributed Objects, Capability Systems, Open Social',
@@ -46,7 +46,7 @@ const profiles = [
   {
     displayName: 'Jas Hyre',
     profileSlug: 'adele_snow',
-    pictureUrl: 'http://localhost:3000/img/team/3.jpg',
+    publicID: '3_da6nnn',
     role: 'Advisor',
     introduction: 'Entrepreneur, Inventor, Author, Advisor, Consultant for all things multiuser, realtime, and social.',
     expertise: 'Reputation Systems, Social Software, Virtual Communities. Virtual Economies, Virtual Worlds, Online Identity, Distributed Objects, Capability Systems, Open Social',
@@ -68,7 +68,7 @@ const profiles = [
   {
     displayName: 'Dylan Woods',
     profileSlug: 'dylan_woods',
-    pictureUrl: 'http://localhost:3000/img/team/4.jpg',
+    publicID: '4_zhebuv',
     role: 'Advisor',
     introduction: 'Entrepreneur, Inventor, Author, Advisor, Consultant for all things multiuser, realtime, and social.',
     expertise: 'Reputation Systems, Social Software, Virtual Communities. Virtual Economies, Virtual Worlds, Online Identity, Distributed Objects, Capability Systems, Open Social',
@@ -90,7 +90,7 @@ const profiles = [
   {
     displayName: 'Vikram Mordani',
     profileSlug: 'jim_stone2',
-    pictureUrl: 'http://localhost:3000/img/team/6.jpg',
+    publicID: '6_rjzion',
     role: 'Advisor',
     introduction: 'Entrepreneur, Inventor, Author, Advisor, Consultant for all things multiuser, realtime, and social.',
     expertise: 'Reputation Systems, Social Software, Virtual Communities. Virtual Economies, Virtual Worlds, Online Identity, Distributed Objects, Capability Systems, Open Social',
@@ -112,7 +112,7 @@ const profiles = [
   {
     displayName: 'Kapil Nananlal',
     profileSlug: 'andy_river1',
-    pictureUrl: 'http://localhost:3000/img/team/7.jpg',
+    publicID: '7_r8ww3n',
     role: 'Advisor',
     introduction: 'Entrepreneur, Inventor, Author, Advisor, Consultant for all things multiuser, realtime, and social.',
     expertise: 'Reputation Systems, Social Software, Virtual Communities. Virtual Economies, Virtual Worlds, Online Identity, Distributed Objects, Capability Systems, Open Social',
@@ -134,7 +134,7 @@ const profiles = [
   {
     displayName: 'Vikram Mordani',
     profileSlug: 'jim_stone2',
-    pictureUrl: 'http://localhost:3000/img/team/6.jpg',
+    publicID: '8_b0ycmt',
     role: 'Advisor',
     introduction: 'Entrepreneur, Inventor, Author, Advisor, Consultant for all things multiuser, realtime, and social.',
     expertise: 'Reputation Systems, Social Software, Virtual Communities. Virtual Economies, Virtual Worlds, Online Identity, Distributed Objects, Capability Systems, Open Social',
@@ -156,7 +156,7 @@ const profiles = [
   {
     displayName: 'Kapil Nananlal',
     profileSlug: 'andy_river1',
-    pictureUrl: 'http://localhost:3000/img/team/7.jpg',
+    publicID: '9_kdmblm',
     role: 'Advisor',
     introduction: 'Entrepreneur, Inventor, Author, Advisor, Consultant for all things multiuser, realtime, and social.',
     expertise: 'Reputation Systems, Social Software, Virtual Communities. Virtual Economies, Virtual Worlds, Online Identity, Distributed Objects, Capability Systems, Open Social',
@@ -178,7 +178,7 @@ const profiles = [
   {
     displayName: 'Minck Hermans',
     profileSlug: 'adele_snow1',
-    pictureUrl: 'http://localhost:3000/img/team/8.jpg',
+    publicID: '11_zikya4',
     role: 'Advisor',
     introduction: 'Entrepreneur, Inventor, Author, Advisor, Consultant for all things multiuser, realtime, and social.',
     expertise: 'Reputation Systems, Social Software, Virtual Communities. Virtual Economies, Virtual Worlds, Online Identity, Distributed Objects, Capability Systems, Open Social',
@@ -200,7 +200,7 @@ const profiles = [
   {
     displayName: 'Chaitanya Amin',
     profileSlug: 'dylan_woods1',
-    pictureUrl: 'http://localhost:3000/img/team/9.jpg',
+    publicID: '12_gaaqnv',
     role: 'Advisor',
     introduction: 'Entrepreneur, Inventor, Author, Advisor, Consultant for all things multiuser, realtime, and social.',
     expertise: 'Reputation Systems, Social Software, Virtual Communities. Virtual Economies, Virtual Worlds, Online Identity, Distributed Objects, Capability Systems, Open Social',
@@ -222,7 +222,7 @@ const profiles = [
   {
     displayName: 'Vikram Mordani',
     profileSlug: 'jim_stone3',
-    pictureUrl: 'http://localhost:3000/img/team/11.jpg',
+    publicID: '13_jkbktm',
     role: 'Advisor',
     introduction: 'Entrepreneur, Inventor, Author, Advisor, Consultant for all things multiuser, realtime, and social.',
     expertise: 'Reputation Systems, Social Software, Virtual Communities. Virtual Economies, Virtual Worlds, Online Identity, Distributed Objects, Capability Systems, Open Social',
@@ -244,7 +244,7 @@ const profiles = [
   {
     displayName: 'Chaitanya Amin',
     profileSlug: 'andy_river3',
-    pictureUrl: 'http://localhost:3000/img/team/12.jpg',
+    publicID: '14_clgbev',
     role: 'Advisor',
     introduction: 'Entrepreneur, Inventor, Author, Advisor, Consultant for all things multiuser, realtime, and social.',
     expertise: 'Reputation Systems, Social Software, Virtual Communities. Virtual Economies, Virtual Worlds, Online Identity, Distributed Objects, Capability Systems, Open Social',
@@ -266,7 +266,7 @@ const profiles = [
   {
     displayName: 'Kapil Nananlal',
     profileSlug: 'adele_snow3',
-    pictureUrl: 'http://localhost:3000/img/team/13.jpg',
+    publicID: '13_jkbktm',
     role: 'Advisor',
     introduction: 'Entrepreneur, Inventor, Author, Advisor, Consultant for all things multiuser, realtime, and social.',
     expertise: 'Reputation Systems, Social Software, Virtual Communities. Virtual Economies, Virtual Worlds, Online Identity, Distributed Objects, Capability Systems, Open Social',
@@ -288,7 +288,7 @@ const profiles = [
   {
     displayName: 'Minck Hermans',
     profileSlug: 'dylan_woods3',
-    pictureUrl: 'http://localhost:3000/img/team/14.jpg',
+    publicID: '14_clgbev',
     role: 'Advisor',
     introduction: 'Entrepreneur, Inventor, Author, Advisor, Consultant for all things multiuser, realtime, and social.',
     expertise: 'Reputation Systems, Social Software, Virtual Communities. Virtual Economies, Virtual Worlds, Online Identity, Distributed Objects, Capability Systems, Open Social',

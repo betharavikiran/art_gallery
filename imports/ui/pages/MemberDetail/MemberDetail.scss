@@ -1,28 +1,44 @@
 
 .member-detail-page {
   margin-top: 150px;
-  margin-bottom: 100px;
   opacity: 0.95;
 }
 
 .member-detail-header{
-  font-size:20px ;
+  font-size:18px ;
   font-weight: 300;
 }
 
 .member-detail-record{
-  font-size:18px ;
+  font-size:15px ;
+  margin: 0px;
+  padding: 15px;
+  border-bottom: #c68F4E solid 2px;
+  background-color: #313638;
+  color:#c68F4E;
+  opacity: 0.8;
+}
+
+strong {
+  color:white;
+  font-weight: bolder;
+  font-family: Futura-Light;
+}
+
+
+.member-detail-panel{
+  padding: 2px;
 }
 
 
 .custom-tabs {
-  font-size: 25px;
-  color: white;
-  background:#c68F4E;
+  font-size: 18px;
+  color: #c68F4E;
+  background-color: #313638;
 }
 
 .custom-tab {
   height: auto;
-  font-size: 22px;
-  color: white;
+  font-size: 18px;
+  color: #c68F4E
 }
