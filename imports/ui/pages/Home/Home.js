@@ -34,6 +34,7 @@ class Home extends React.Component {
             </Grid>
           </div>
         </section>
+        <hr />
         <section className="module bg-dark-30">
           <div className="container">
             <h2 className="module-title font-alt">Decentralized Platform</h2>
@@ -89,7 +90,7 @@ class Home extends React.Component {
             </Row>
           </div>
         </section>
-        <hr/>
+        <hr />
         <section className="module bg-dark-30">
           <div className="container">
             <h2 className="module-title font-alt">Block Chain Technology</h2>

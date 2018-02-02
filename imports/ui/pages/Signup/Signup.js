@@ -82,7 +82,7 @@ class Signup extends React.Component {
 
   render() {
     return (
-      <div className="main signup" id="signup">
+      <div className="signup" id="signup">
         <section>
           <div className="inner">
             <div className="copy">
@@ -90,72 +90,70 @@ class Signup extends React.Component {
             </div>
           </div>
         </section>
-        <section className="module">
-          <div className="container">
-            <hr className="divider-w mb-5" />
-            <Grid>
-              <Row>
-                <Col sm={5} className="mb-sm-40">
-                  <OAuthLoginButtons
-                    services={['facebook', 'github', 'google']}
-                  />
-                </Col>
-                <Col sm={5}>
-                  <form ref={form => (this.form = form)} onSubmit={event => event.preventDefault()}>
-                    <Row>
-                      <Col xs={6}>
-                        <FormGroup>
-                          <ControlLabel>First Name</ControlLabel>
-                          <input
-                            type="text"
-                            name="firstName"
-                            ref={firstName => (this.firstName = firstName)}
-                            className="form-control"
-                          />
-                        </FormGroup>
-                      </Col>
-                      <Col xs={6}>
-                        <FormGroup>
-                          <ControlLabel>Last Name</ControlLabel>
-                          <input
-                            type="text"
-                            name="lastName"
-                            ref={lastName => (this.lastName = lastName)}
-                            className="form-control"
-                          />
-                        </FormGroup>
-                      </Col>
-                    </Row>
-                    <FormGroup>
-                      <ControlLabel>Email Address</ControlLabel>
-                      <input
-                        type="email"
-                        name="emailAddress"
-                        ref={emailAddress => (this.emailAddress = emailAddress)}
-                        className="form-control"
-                      />
-                    </FormGroup>
-                    <FormGroup>
-                      <ControlLabel className="clearfix">
-                        <span className="pull-left">Password</span>
-                        <Link className="pull-right" to="/recover-password">Forgot password?</Link>
-                      </ControlLabel>
-                      <input
-                        type="password"
-                        name="password"
-                        ref={password => (this.password = password)}
-                        className="form-control"
-                      />
-                    </FormGroup>
-                    <Button type="submit" className="btn btn-round btn-b">Sign Up</Button>
-                    <AccountPageFooter>
-                      <p>Already have an account? <Link to="/login">Log In</Link>.</p>
-                    </AccountPageFooter>
-                  </form>
-                </Col>
-              </Row>
-            </Grid>
-          </div>
+        <section className="module bg-dark-30">
+          <hr className="divider-w mb-5" />
+          <Grid>
+            <Row>
+              <Col sm={5} className="mb-sm-40">
+                <OAuthLoginButtons
+                  services={['facebook', 'github', 'google']}
+                />
+              </Col>
+              <Col sm={5}>
+                <form ref={form => (this.form = form)} onSubmit={event => event.preventDefault()}>
+                  <Row>
+                    <Col xs={6}>
+                      <FormGroup>
+                        <ControlLabel>First Name</ControlLabel>
+                        <input
+                          type="text"
+                          name="firstName"
+                          ref={firstName => (this.firstName = firstName)}
+                          className="form-control"
+                        />
+                      </FormGroup>
+                    </Col>
+                    <Col xs={6}>
+                      <FormGroup>
+                        <ControlLabel>Last Name</ControlLabel>
+                        <input
+                          type="text"
+                          name="lastName"
+                          ref={lastName => (this.lastName = lastName)}
+                          className="form-control"
+                        />
+                      </FormGroup>
+                    </Col>
+                  </Row>
+                  <FormGroup>
+                    <ControlLabel>Email Address</ControlLabel>
+                    <input
+                      type="email"
+                      name="emailAddress"
+                      ref={emailAddress => (this.emailAddress = emailAddress)}
+                      className="form-control"
+                    />
+                  </FormGroup>
+                  <FormGroup>
+                    <ControlLabel className="clearfix">
+                      <span className="pull-left">Password</span>
+                      <Link className="pull-right" to="/recover-password">Forgot password?</Link>
+                    </ControlLabel>
+                    <input
+                      type="password"
+                      name="password"
+                      ref={password => (this.password = password)}
+                      className="form-control"
+                    />
+                  </FormGroup>
+                  <Button type="submit" className="btn btn-round btn-b">Sign Up</Button>
+                  <AccountPageFooter>
+                    <p>Already have an account? <Link to="/login">Log In</Link>.</p>
+                  </AccountPageFooter>
+                </form>
+              </Col>
+            </Row>
+          </Grid>
         </section>
       </div>
     );

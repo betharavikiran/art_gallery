@@ -21,7 +21,7 @@ const ContactUs = () => (
       <div className="container">
         <Grid>
           <Row>
-            <Col sm={6}>
+            <Col sm={5} smOffset={1}>
               <h4 className="font-alt">Get in touch</h4><br />
               <form id="contactForm" role="form">
                 <div className="form-group">
@@ -44,7 +44,7 @@ const ContactUs = () => (
               </form>
               <div className="ajax-response font-alt" id="contactFormResponse" />
             </Col>
-            <Col sm={6}>
+            <Col sm={5}>
               <h4 className="font-alt">Additional info</h4><br />
               <p>We will respond back to your enquiry with in 24 hours on a business day. Please be patient.</p>
               <hr />

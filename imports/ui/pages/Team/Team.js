@@ -29,6 +29,7 @@ const Team = () => (
                     ))}
               </div>
             </Row>
+            <hr />
             <Row>
               <h4 className="module-subtitle font-alt team-group">Core Team</h4>
             </Row>
