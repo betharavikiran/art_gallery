@@ -23,11 +23,12 @@ export default class CloudinaryImage extends React.Component {
 
 CloudinaryImage.propTypes = {
   publicId: PropTypes.string.isRequired,
-  classNames: PropTypes.string.isRequired,
+  classNames: PropTypes.string,
   isCircle: PropTypes.bool,
 };
 
 
 CloudinaryImage.defaultProps = {
   isCircle: false,
+  classNames: '',
 };
